@@ -10,6 +10,7 @@ h1 {
 
 header.container {
 	min-height: 60px;
+	margin-bottom: 10px;
 	display:flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -33,6 +34,10 @@ ul.navbar-nav {
 
 .col-2 > button.btn-success {
 	min-width: 70px;
+}
+
+img.img-fluid {
+	margin-bottom:10px;
 }
 
 /* 
@@ -80,19 +85,6 @@ nav > li.nav-item {
 	align-items: center;
 	justify-content: center;
 }
-/* 
-.btn-login{
-	border-color: green;
-	background-color: rgba(78, 78, 255, 0.799);
-	color: white;
-}
-
-
-.btn-login:hover{
-	border-color: green;
-	background-color: rgba(78, 78, 255, 0.56);
-	color: white;
-} */
 
 main.container-xxl {
 	height: 100%;
@@ -165,14 +157,25 @@ footer.text-muted {
 	margin-top: 0.6em;
 }
 
-/* 
-@media screen and (max-width:998px) {
-
+button.top-btn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+	cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px; /* Increase font size */
+  background-color: white; /* Set a background color */
 }
 
-@media screen and (min-width: 1024px) and (max-width:1520px) {
-		
-} */
+
+@media screen and (min-width: 1200px) {
+	img.img-fluid{
+		max-width: 90%;
+	}		
+} 
 
 
 /* CAROUSEL LAYOUT - BOOTSTRAP
